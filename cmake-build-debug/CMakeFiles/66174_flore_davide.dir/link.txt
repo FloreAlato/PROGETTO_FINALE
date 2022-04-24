@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\66174_flore_davide.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\66174_flore_davide.dir/objects.a @CMakeFiles\66174_flore_davide.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\66174_flore_davide.dir/objects.a -Wl,--no-whole-archive  -o 66174_flore_davide.exe -Wl,--out-implib,lib66174_flore_davide.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\66174_flore_davide.dir\linklibs.rsp

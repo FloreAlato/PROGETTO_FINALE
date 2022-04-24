@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/games.h
+main.h
+C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/main.h
+morra_cinese.h
+C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/morra_cinese.h
+
+C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/main.c
+games.h
+C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/games.h
+
+C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/main.h
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+stdbool.h
+-
+string.h
+-
+math.h
+-
+
+C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/morra_cinese.h
+
