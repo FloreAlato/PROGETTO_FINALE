@@ -7,6 +7,8 @@
 
 #endif //MAIN_C_MORRA_CINESE_H
 
+#include "indovina_il_numero.h"
+
 
 
 
@@ -23,11 +25,6 @@ struct morra {
 //non sarebbero necessarie, ma le metto per estetica, giusto per scrivere le funzioni nell'ordine giusto
 int morra_cinese(const int[2]);
 struct morra turno_morra(int, struct morra, struct morra, struct morra);
-
-
-
-
-
 
 
 
@@ -119,3 +116,6 @@ struct morra turno_morra(int pla, struct morra carta, struct morra forbici, stru
     //infine ritorna il valore scelto
     return turn;
 }
+
+
+//rendere piacevole da giocare

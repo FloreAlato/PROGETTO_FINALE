@@ -2,75 +2,12 @@
 // Created by Davide Flore on 21/01/2022.
 //
 
-#include "main.h"
 #include "morra_cinese.h"
 
 #ifndef INC_66174_FLORE_DAVIDE_GAMES_H
 #define INC_66174_FLORE_DAVIDE_GAMES_H
 
 #endif //INC_66174_FLORE_DAVIDE_GAMES_H
-
-
-
-
-int indovina_il_numero(int n, int players[n]) {
-
-    bool worth_it = find_players(n, players);
-    int winner;
-
-    if(!worth_it) {
-
-        winner = rand() % n;
-        //printf("\n\nnon vale neanche la pena giocare...\n\n");
-    } else {
-
-        int guess = rand() % 1000;
-        int num, i, low = 0, high = 999;
-        bool won = false;
-
-        printf("\nHo scelto un numero fra 0 e 999! Indovinate!!\n");
-        //printf("(ho scelto %d)\n", guess);
-
-
-        while(won == false) {
-
-            i = 0;
-
-            while(i < n && won == false) {
-
-                printf("\n[%s]: ", print_player(players[i]));
-
-                if(players[i] < 0) {
-
-                    num = get_int(" ", 0, 999);
-                } else {
-
-                    num = low + (high - low) / 2;
-
-                    printf("%d!\n", num);
-                }
-
-                if(num == guess) {
-
-                    winner = i;
-                    printf("\n\n%s vince!!", print_player(players[i]));
-                    won = true;
-                } else if(num > guess) {
-
-                    high = num;
-                    printf("di meno...\n");
-                } else {
-                    low = num;
-                    printf("di piu'...\n");
-                }
-
-                i++;
-            }
-        }
-    }
-
-    return players[winner];
-}
 
 
 
@@ -192,15 +129,3 @@ int dadi(const int players[2]) {
 
     return winner;
 }
-
-
-
-
-
-
-
-
-
-
-
-

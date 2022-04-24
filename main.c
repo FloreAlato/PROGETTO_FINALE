@@ -32,8 +32,8 @@ int main() {
 
     //TESTING
     int p[2] = {-1, -3};
-    int r = morra_cinese(p);
-    printf("\n%d\n", p[r]);
+    int r = indovina_il_numero(2, &p[0]);
+    printf("\nVince %d!\n", p[r]);
 
     //srand(time(NULL));
 

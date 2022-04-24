@@ -7,30 +7,52 @@
 
 #endif //HANDY_H_INDOVINA_IL_NUMERO_H
 
-#include <stdbool.h>
+#include "main.h"
 
 
-int indovina_il_numero(int size, int players[size]) {
+
+
+
+//funzione che gestisce il gioco di indovina il numero
+//prende un array di interi e la sua dimensione intera e restituisce un intero
+/**/
+int indovina_il_numero(int size, const int players[size]) {
 
     int winner = 0, number, min = 0, max = 999, i, guess;
     bool won = false;
 
     number = rand() % 1000;
 
-    printf("\nHo scelto un numero da 0 a 999, indovinatelo!");
+    printf("\nHo scelto un numero da 0 a 999, indovinatelo! (%d)", number);
 
     while(won == false) {
 
         i = 0;
         while(i < size && won == false) {
 
-            if(players[1] < 0) {
-                //turno giocatore
+            if(players[i] < 0) {
+                guess = get_int("\nNumeo: ", 0, 999);
             } else {
-                guess = min + (max - min) / 2;//rivedere
+                guess = min + (max - min) / 2;
             }
+
+            if(guess == number) {
+                winner = i;
+                won = true;
+            } else if(number > guess) {
+                min = guess;
+                printf("\nPiu' grande...\n");
+            } else {
+                max = guess;
+                printf("\nPiu' piccolo...\n");
+            }
+
+            i++;
         }
     }
 
     return winner;
 }
+
+
+//rendere piacevole da giocare
