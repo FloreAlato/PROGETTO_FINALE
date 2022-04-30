@@ -1,7 +1,7 @@
 
 
 
-#include "dadi.h"
+#include "murra.h"
 
 
 
@@ -34,7 +34,7 @@ int main() {
     srand(time(NULL));
 
     int players[2] = {-1, -3};
-    int r = dadi(&players[0]);
+    int r = murra(&players[0]);
     printf("\nVince %d", players[r]);
 
 
