@@ -31,72 +31,17 @@ char si_o_no[2][10] = {"no", "si"};
 int main() {
 
     //TESTING
-    int p[2] = {-1, -3};
-    int r = indovina_il_numero(2, &p[0]);
-    printf("\nVince %d!\n", p[r]);
+    //int p[2] = {-1, -3};
+    //int r = indovina_il_numero(2, &p[0]);
+    //printf("\nVince %d!\n", p[r]);
 
     //srand(time(NULL));
 
 
 
-    //inserire profilo giocatore
+    //operazioni di avvio
 
-    ProfiloGiocatore *players = NULL;
-
-    int numero_giocatori = 1, n = 0;
-
-
-
-    choice = choice_string("\nVuoi inserire un profilo giocatore? (si/no)\n[Tu]: ", &si_o_no[0]);
-
-    if(choice) {
-        players = (ProfiloGiocatore *)calloc(numero_giocatori, sizeof(ProfiloGiocatore));
-
-        if(players == NULL) {
-            printf("\n\n\nALLOCAZIONE DI 'players' FALLITA!!\n\n\n");
-            exit(-1);
-        }
-    }
-
-    do {
-        n++;
-
-        printf("\nNome: ");
-        scanf("%s", name);
-        getchar();
-
-        strcpy(players[n].nome, name);
-
-        choice = choice_string("\nVuoi inserire un altro profilo? (si/no)\n[Tu]: ", &si_o_no[0]);
-
-        if(choice) {
-            numero_giocatori++;
-
-            realloc(players, numero_giocatori * sizeof(ProfiloGiocatore));
-
-            if(players == NULL) {
-                printf("\n\n\nREALLOCAZIONE DI 'players' FALLITA!!\n\n\n");
-                exit(-1);
-            }
-        }
-
-    } while(choice);
-
-
-
-    for(int c = 0; c <= n; c++) {
-        printf("\n%s", players[c].nome);
-    }
-
-
-
-    free(players);
-
-
-    //questa parte permette di inserire i profili giocatore
-    //ma e' gestita con un booleano, quindi per adattare al resto delle opzioni bisogna ricevere input intero
-    //non ho ancora una funzione per quello
-
+    //chiedere se vuole inserire un giocatore o caricare i dati
 
 
 

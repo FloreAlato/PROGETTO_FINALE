@@ -14,6 +14,7 @@
 
 
 //struttura che conterrà i gesti del gioco
+//(cfs sta per carta, forbici, sasso)
 struct morra {
     int cfs;
     struct morra *prossimo;
