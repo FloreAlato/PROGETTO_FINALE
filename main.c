@@ -1,7 +1,7 @@
 
 
 
-#include "games.h"
+#include "dadi.h"
 
 
 
@@ -31,11 +31,13 @@ char si_o_no[2][10] = {"no", "si"};
 int main() {
 
     //TESTING
-    //int p[2] = {-1, -3};
-    //int r = indovina_il_numero(2, &p[0]);
-    //printf("\nVince %d!\n", p[r]);
+    srand(time(NULL));
 
-    //srand(time(NULL));
+    int players[2] = {-1, -3};
+    int r = dadi(&players[0]);
+    printf("\nVince %d", players[r]);
+
+
 
 
 

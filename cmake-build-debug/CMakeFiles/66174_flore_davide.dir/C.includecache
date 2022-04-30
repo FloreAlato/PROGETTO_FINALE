@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/games.h
-morra_cinese.h
-C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/morra_cinese.h
+C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/dadi.h
+pari_o_dispari.h
+C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/pari_o_dispari.h
 
 C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/indovina_il_numero.h
 main.h
 C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/main.h
 
 C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/main.c
-games.h
-C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/games.h
+dadi.h
+C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/dadi.h
 
 C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/main.h
 stdio.h
@@ -35,4 +35,8 @@ math.h
 C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/morra_cinese.h
 indovina_il_numero.h
 C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/indovina_il_numero.h
+
+C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/pari_o_dispari.h
+morra_cinese.h
+C:/Users/39349/Desktop/Programmi UNI/PROGETTO FINALE/66174_flore_davide/morra_cinese.h
 

@@ -35,7 +35,8 @@ typedef struct {
 } ProfiloGiocatore;
 
 
-//typedef enum {CARTA, FORBICI, SASSO} Segno;
+char par[2][10] = {"pari", "dispari"};
+char si_no[2][10] = {"si", "no"};
 
 
 
