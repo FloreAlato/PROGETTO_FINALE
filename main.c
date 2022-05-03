@@ -1,7 +1,7 @@
 
 
 
-#include "murra.h"
+#include "tris.h"
 
 
 
@@ -19,6 +19,7 @@ int i;
 char saves_menu[] = "saves_collection.txt";
 char name[64];
 char si_o_no[2][10] = {"no", "si"};
+char scelte[2][10] = {"carica", "nuovo"};
 
 
 
@@ -34,7 +35,7 @@ int main() {
     srand(time(NULL));
 
     int players[2] = {-1, -3};
-    int r = murra(&players[0]);
+    int r = tris(&players[0]);
     printf("\nVince %d", players[r]);
 
 
@@ -43,7 +44,16 @@ int main() {
 
     //operazioni di avvio
 
-    //chiedere se vuole inserire un giocatore o caricare i dati
+    /*chiedere se vuole inserire un giocatore o caricare i dati
+    printf("\n\nVuoi inserire un profilo giocatore o caricare un file eisitente?");
+    printf("\n[nuovo] -> inserisci un profilo\n[carica] -> carica un file di salvataggio");
+    choice = choice_string("\n[Tu]: ", &scelte[0]);
+
+    if(!choice) {
+        printf("\n\ncarica");
+    } else {
+        printf("\n\ninserisci");
+    }*/
 
 
 

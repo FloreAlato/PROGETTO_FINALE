@@ -8,4 +8,5 @@ CMakeFiles/66174_flore_davide.dir/main.c.obj: ../main.h
 CMakeFiles/66174_flore_davide.dir/main.c.obj: ../morra_cinese.h
 CMakeFiles/66174_flore_davide.dir/main.c.obj: ../murra.h
 CMakeFiles/66174_flore_davide.dir/main.c.obj: ../pari_o_dispari.h
+CMakeFiles/66174_flore_davide.dir/main.c.obj: ../tris.h
 

@@ -326,3 +326,14 @@ int form(int num) {
 
     return ret;
 }
+
+
+
+bool is_numeric(char c) {
+
+    if((int)c >= 48 && (int)c <= 57) {
+        return true;
+    } else {
+        return false;
+    }
+}
